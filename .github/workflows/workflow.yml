@@ -17,6 +17,6 @@ jobs:
           uses: lbertenasco/s3-deploy@v1
           with:
             folder: 
-            bucket: ${{ secrets.S3_BUCKET }}/ff
+            bucket: ${{ secrets.S3_BUCKET }}/fff
             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: / *
