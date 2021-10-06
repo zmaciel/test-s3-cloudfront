@@ -1,0 +1,2 @@
+- name: S3 and CloudFront Deploy
+  uses: lbertenasco/s3-deploy@v1.2.4
