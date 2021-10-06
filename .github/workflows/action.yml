@@ -5,13 +5,13 @@ inputs:
     description: 'build'
     required: true
   bucket: 
-    description: 'Name of AWS Bucket'
+    description: ${{ secrets.S3_BUCKET }}
     required: true
   dist-id:
-    description: 'AWS CloudFront distribution ID'
+    description: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
     required: true
   invalidation:
-    description: 'AWS CloudFront invalidation path(s)'
+    description: '/'
     required: true
 runs:
   using: 'node12'
