@@ -13,8 +13,7 @@ jobs:
         - name: Install dependencies
           run: yarn
 
-        - name: Build
-          run: yarn build
+      
 
         - name: Deploy
           uses: lbertenasco/s3-deploy@v1
